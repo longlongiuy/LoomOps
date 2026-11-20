@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#10120f">
+  <meta name="description" content="织序，多 Agent 工作流编排、调度与验证工作台">
+  <title>织序 · Agent 编排工作台</title>
+  <link rel="stylesheet" href="./style.css">
+  <script src="./engine.js" defer></script>
+  <script src="./app.js" defer></script>
+</head>
+<body>
+  <div class="shell">
+    <aside class="sidebar">
+      <div class="brand"><span class="brand-icon" data-icon="logo"></span><div>织序<span>LOOMOPS</span></div></div>
+      <div class="workspace"><span class="workspace-icon" data-icon="layers"></span><div>审计工作空间<small>经营数据质量</small></div></div>
+      <p class="nav-label">工作台</p>
+      <nav id="nav" aria-label="主导航"></nav>
+      <div class="sidebar-foot"><div class="mode-card"><i></i><div id="mode-label">离线演示<small>DeepSeek 可配置</small></div></div><button class="nav-button" data-page="settings"><span data-icon="settings"></span>模型设置</button></div>
+    </aside>
+    <div class="main">
+      <header class="top"><div><span class="top-muted">工作台</span><span class="slash">/</span><span id="crumb">工作流编排</span></div><div class="top-actions"><button id="top-settings" class="btn quiet"><span data-icon="settings"></span><span>模型设置</span></button><button id="top-run" class="btn primary"><span data-icon="play"></span>运行工作流</button></div></header>
+      <main id="view"></main>
+    </div>
+  </div>
+  <dialog id="dialog"></dialog>
+  <div id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>

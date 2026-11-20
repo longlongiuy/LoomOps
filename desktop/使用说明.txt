@@ -1,0 +1,12 @@
+织序 · Windows 便携版（x64）
+
+1. 将 ZIP 全部解压到同一个文件夹，双击 LoomOps.exe。它会打开独立的桌面窗口。
+2. 点击「运行工作流」即可使用内置的离线样例。验证门会触发一次反馈，重新执行分析分支后生成审计报告。
+3. 要使用真实 DeepSeek，在「模型设置」选择「DeepSeek 实时推理」，输入自己的 API Key，测试连接后保存。Key 只在本次会话内使用，每次重开应用可重新输入。也可使用 DEEPSEEK_API_KEY 环境变量从本机启动。
+4. 数据、Agent 配置和运行历史保存在当前 Windows 用户的 %LOCALAPPDATA%\LoomOps 下。桌面版和私有网站分别保存各自的运行记录。运行快照和报告可以通过应用导出。
+
+系统：Windows 10/11 x64，需要 Microsoft Edge WebView2 Runtime 和 .NET Framework 4.8。常见的 Windows 11 已预装它们。若系统缺少 WebView2，可从微软下载安装：https://developer.microsoft.com/microsoft-edge/webview2/
+
+离线模式不需要联网、ChatGPT 登录或 Node.js。DeepSeek 实时模式需要联网，任务描述、聚合统计、异常明细和相关规则会提交给 DeepSeek 官方 API。交付包不含 API Key。
+
+Microsoft WebView2 SDK 的许可和声明位于 licenses 文件夹。

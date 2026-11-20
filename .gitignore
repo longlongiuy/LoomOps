@@ -1,0 +1,8 @@
+.env
+.env.*
+!.env.example
+node_modules/
+/desktop/loomops.ico
+/desktop-package-v1.1/
+/desktop-smoke/
+/loomops/dist/server/
